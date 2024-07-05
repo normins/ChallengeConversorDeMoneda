@@ -5,17 +5,14 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.sql.SQLOutput;
 
 public class ConsultarAPI {
-
+    // Convertir utilizando Exchange Rate
     public Moneda convertirConAPI(String origenMoneda, String destinoMoneda, int monto)
                 throws java. io. IOException, InterruptedException{
 
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/c4bf1e058dcd5f1034b2417f/pair/"
                 + origenMoneda + "/" + destinoMoneda + "/" + monto);
-        //System.out.println("-------------------------");
-        //System.out.println(direccion);
 
         HttpClient client  = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()

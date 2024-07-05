@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class Menu {
     public static void mostrarMenu() throws IOException, InterruptedException {
-        int opcion;
-        int valorAConvertir;
+        int opcion, valorAConvertir;
         valorAConvertir = 0;
         Scanner entrada = new Scanner(System.in);
 
+        // Información sobre la conversión solicitada
         ConvertirOpcion moneda1A2 = new ConvertirOpcion();
 
         do {

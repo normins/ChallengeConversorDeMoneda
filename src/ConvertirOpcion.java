@@ -12,12 +12,11 @@ public class ConvertirOpcion {
     public void convertir(String origen, String destino, int valor) throws IOException, InterruptedException {
         ConsultarAPI consulta = new ConsultarAPI();
 
-        //System.out.println("acá hay que convertir"+ origen + destino + valor);
-
         Moneda moneda = consulta.convertirConAPI(origen, destino, valor);
         moneda.datos(valor);
     }
 
+    //Ingresar importe para obtener su equivalente en otra moneda
     public void ingresarDato(){
         System.out.println("Ingresa el valor a convertir:");
         valor = input.nextInt();

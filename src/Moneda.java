@@ -7,12 +7,11 @@ public class Moneda{
         public String valorDestino;
         @SerializedName("conversion_rate")
         public String conversion;
+        // Devuelve el importe ingresado convertido a la nueva moneda
         @SerializedName("conversion_result")
         public String resultado;
 
     public void datos(int cantidad){
-        //System.out.println("1["+valorOrigen+"] equivale a "+conversion+"["+valorDestino+"]");
-        //System.out.println("La conversión de "+cantidad+"["+valorOrigen+"] a ["+valorDestino+"] es de "+resultado+"["+valorDestino+"]");
         System.out.println("El valor "+cantidad+"["+valorOrigen+"] corresponde al valor final de =>>> "+resultado+"["+valorDestino+"]") ;
 
     }
